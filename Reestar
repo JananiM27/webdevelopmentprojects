@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>REESTAR</title>
+        <style>
+            *{
+                margin:0;
+                padding:0;
+            }
+            nav{
+                background-color: black;
+                color:white;
+                padding:15px;
+                text-align: center;
+            }
+            ul,li,h1{
+                display: inline;
+            }
+            li{
+                color:white;
+                cursor: pointer;
+            }
+            li:hover{
+                color:pink;
+            }
+            .box{
+                border-color:black;
+                border-width: 3px;
+                border-style: solid;
+                display: inline-block;
+                width:250px;
+            }
+            .box:hover{
+                background-color:greenyellow;
+                color:rgb(235, 17, 144);
+                cursor:pointer;
+            }
+            #heads{
+                background-color: black;
+                color:white;
+                padding: 10px;
+            }
+            #one{
+                color:black;
+            }
+            #one:hover{
+                background-color: white;
+                color:blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            <nav>
+                <h1>REESTAR</h1>
+                <br>
+                <ul>
+                    <li> Home | </li>
+                    <li> Receipe |</li>
+                    <li> Contact </li>
+                </ul>
+            </nav>
+        </div>
+        <br>
+       <center>
+        <div class="list">
+            <div class="box">
+               <img src="67c318ea36f2e_download.jpg">
+                <p>Assorted South Indian Breakfast Foods On Wooden Background and Of Indian Cuisine Stock Photo. </p>
+                <center><button style="background-color: black;color:white;">Order Now</button></center>
+            </div>
+            <div class="box">
+               <img src="67c3190bd9f89_download.jpg">
+                <p>Biryani Unlimitly Available Seving tantalizing taste with a old traditional receipe.</p>
+                <center><button style="background-color: black;color:white;">Order Now</button></center>
+            </div>
+            <div class="box">
+                <img src="67c32dbad8a6f_download.jpg">
+                <p>Mini-Meats Available with old traditional receipe and of Indian Cuisine Stock Photo.</p>
+                <center><button style="background-color: black;color:white;">Order Now</button></center>
+            </div>
+            <div class="box">
+                <img src="67c318fc52d48_download.jpg">
+                <p>Veg Hakka Noodles thin,flat,what-floud noodles that are a staple of indo-Chinese cusine. </p>
+                <center><button style="background-color: black;color:white;">Order Now</button></center>
+            </div>
+        </div>
+        </center>
+        <br>
+        <hr>
+        <center>
+            <div id="one">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis distinctio cum nesciunt, deleniti error nostrum fugit adipisci repellendus accusantium doloribus tempora quas dignissimos ullam suscipit commodi fugiat veniam magni! Laboriosam facilis id nam tempore perferendis molestiae quaerat, ullam sint beatae impedit quia vitae deserunt hic repellendus accusantium magnam fugit dignissimos esse illo vero architecto eligendi amet necessitatibus? Vel architecto, quos consectetur voluptate ducimus in voluptatem eius, temporibus officiis ipsam ipsa laborum ullam reprehenderit veniam atque! Ipsum illo reiciendis ab asperiores quibusdam exercitationem fugit. Ducimus a sequi cumque beatae fuga nam cum obcaecati nihil ipsum, pariatur eligendi sint dicta non recusandae iure architecto ex facere eos consectetur error voluptate, ratione ab? Quam aspernatur quasi maxime possimus exercitationem numquam sapiente alias dolores, debitis ut consequatur! Voluptatem totam deleniti suscipit eos facilis dicta corporis a, enim nesciunt amet, ratione minus dignissimos veritatis porro rerum unde nostrum optio, voluptates inventore saepe obcaecati. Tenetur sapiente consequuntur minus, incidunt nobis inventore rem? Alias debitis laboriosam, placeat accusantium ducimus accusamus quibusdam maxime minus inventore, ipsa doloribus quaerat quod ea optio sapiente saepe! Ipsum deserunt quisquam, corrupti nam veniam quaerat repudiandae ab esse consequuntur repellat animi, nobis, sunt voluptas rem error. Sequi voluptatibus quisquam, voluptas error ullam magnam officiis ab ad suscipit asperiores accusantium autem maiores. Sunt deserunt tempore eaque similique explicabo magnam iste, earum voluptas odit unde sint eveniet saepe harum labore rem hic iusto! Voluptate repellat consequuntur deserunt ipsum provident doloremque quis, mollitia, reiciendis odio veritatis voluptatum? Omnis soluta perferendis voluptas facilis quos? Quo, iste nemo.</p>
+            </center>
+        </div>
+            <br>
+            <hr>
+            <center>
+        <h3>Contact Us</h3>
+        <div id="heads">
+            <tr>
+                <td>Name:</td><td><input type="text" placeholder="Enter Your Name"></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Age:</td><td><input type="number" placeholder="Enter Your Age"></td>
+            </tr>
+            <br>
+            <tr>
+                <td>Email-Id:</td><td><input type="email" placeholder="Enter Your Email-Id"></td>
+            </tr>
+            <br>
+            <br>
+            <button style="background-color:rgb(143, 1, 1);color:white;cursor: pointer;width:20%;height:20%;">Send</button>
+        </center>
+    </div>
+ </body>
+</html>
