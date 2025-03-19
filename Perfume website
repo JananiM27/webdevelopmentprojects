@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Perfume </title>
+       *{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    color: yellow;
+    padding: 15px;
+}
+ul,li,h1{
+    display: inline;
+}
+ul{
+    margin-left: 60%;
+}
+li{
+    color: gray;
+}
+li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+input{
+    width:60%;
+    padding: 15px;
+}
+.searchbar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.box{
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    width:250px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+}
+.box:hover{
+    background-color: black;
+    color: white;
+}
+
+.about{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact{
+    text-align: center;
+    margin-top:20px;
+    background-color: black;
+    color: white;
+}
+.contact:hover{
+    color: blue;
+}
+
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <h1>  PERFUME </h1>
+                <ul>
+                    <li> HOME | </li>
+                    <li> PRODUCTS | </li>
+                    <li> ABOUT US | </li>
+                    <li> CONTACT US </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="searchbar">
+            <input placeholder="Search">
+        </div>
+
+        <div class="products">
+            <center>
+            <div class="box">
+                <img src="perfume.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odio, inventore fugiat iste, non sed ratione nulla pariatur dolorum, possimus voluptatum minima consequatur hic a quod officiis. Voluptate, tempore vero. Consequatur aliquid atque culpa iste officia illo nobis mollitia sunt quasi, necessitatibus harum odit incidunt deleniti cumque quod voluptates dolorem.</p>
+            </div>
+            <div class="box">
+                <img src="pe.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odio, inventore fugiat iste, non sed ratione nulla pariatur dolorum, possimus voluptatum minima consequatur hic a quod officiis. Voluptate, tempore vero. Consequatur aliquid atque culpa iste officia illo nobis mollitia sunt quasi, necessitatibus harum odit incidunt deleniti cumque quod voluptates dolorem.</p>
+            </div>
+            <div class="box">
+                <img src="perfume3.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odio, inventore fugiat iste, non sed ratione nulla pariatur dolorum, possimus voluptatum minima consequatur hic a quod officiis. Voluptate, tempore vero. Consequatur aliquid atque culpa iste officia illo nobis mollitia sunt quasi, necessitatibus harum odit incidunt deleniti cumque quod voluptates dolorem.</p>
+            </div>
+        </center>
+        </div>
+
+        <div class="about">
+            <h1> ABOUT US </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi nostrum voluptate voluptatum officiis deserunt id sit, culpa a enim nulla quasi, est, non dolore molestiae! Rem odit voluptates esse dolore animi adipisci aliquid id perferendis! Atque sint aspernatur maiores nobis ut magnam, sed sit culpa hic? Corporis mollitia alias ipsam non repellendus. Alias soluta qui impedit mollitia! Aperiam quo aspernatur natus neque, rerum quaerat suscipit voluptatum libero ad provident dolor, nulla accusantium perferendis temporibus magnam excepturi eos, doloremque veniam laudantium quas aut atque ipsa unde. Quos corrupti eligendi, blanditiis quidem libero eius pariatur, deleniti quis magni in perspiciatis nostrum?</p>
+        </div>
+
+        <div class="contact">
+            <h1> CONTACT US </h1>
+            <p>+917890012345</p>
+            <p>abc@gmail.com</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem autem dignissimos excepturi assumenda, quasi recusandae! Autem quibusdam corporis velit totam nesciunt exercitationem eum, iure molestias et voluptates sed ipsam quisquam quidem voluptatibus cupiditate eaque dolorem enim. Corrupti maxime iusto sunt beatae cupiditate ducimus natus, voluptate dolores eius blanditiis, debitis quaerat.</p>
+        </div>
+    </body>
+</html>
