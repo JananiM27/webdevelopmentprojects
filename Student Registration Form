@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> STUDENT REGISTRATION FORM 📝</title>
+       <style>
+body{
+    font-family: Arial,sans-serif;
+    background-color: #ffffff;
+}
+
+.container{
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border:1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(4, 4, 102);
+}
+
+.form-group{
+      margin-bottom:20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="file"],
+input [type="name"]
+{
+    width:100%;
+    height:30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border:1px solid #ccc;
+}
+
+select{
+    width:100px;
+    height:40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border:1px solid #ccc;
+}
+
+button[type="submit"]{
+    width:100%;
+    height:40px;
+    background-color: rgb(4, 4, 102);
+    color:#fff;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover{
+    background-color: red;
+}
+</style>
+    </head>
+    <body>
+        <div class="container">
+            <h1> STUDENT REGISTRATION FORM 📝</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="rollno">Roll Number:</label>
+                    <input type="text" id="text" name="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="number" name="number" required>
+                </div>
+                <div class="form-group">
+                    <lable for="gender">Gender:</lable>
+                    <select id="gender" name="degree" required>
+                        <option value="">Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email-Id:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="college">College Name:</label>
+                    <input type="name" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="degree">Degree:</label>
+                    <select id="degree" name="degree" required>
+                        <option value=""> Select your Degree</option>
+                        <option value="btect">B.Tech</option>
+                        <option value="be">B.E</option>
+                        <option value="mtech">M.Tech</option>
+                        <option value="me">M.E</option>
+                        <option value="mba">MBA</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <select id="department" name="department" required>
+                        <option value=""> Select Your Department</option>
+                        <option value="CSE">CSE</option>
+                        <option value="IT">IT</option>
+                        <option value="ECE">ECE</option>
+                        <option value="EEE">EEE</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="course">Course:</label>
+                    <select id="course" name="course" required>
+                        <option value=""> Select a Course</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="php">PHP</option>
+                        <option value="mysql">MySQL</option>
+                        <option value="c">C</option>
+                        <option value="c++">C++</option>
+                        <option value="c#">C#</option>
+                        <option value="core java">Core Java</option>
+                        <option value="python">Python</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label> 
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm-Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="file">Upload Your Resume:</label>
+                    <input type="file" id="file" name="file" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </body>
+</html>
