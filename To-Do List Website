@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+<style>
+     body{
+                font-family: Arial,sans-serif;
+                text-align: center;
+                background-color:rgb(32, 194, 223);
+            }
+.todo-app {
+    background-color: rgb(223, 32, 191);
+    color: white;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 10px 10x 10px rgba(8, 35, 189, 0.1);
+    
+}
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#task-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+#task-list li:last-child {
+    border-bottom: none;
+}
+.completed {
+    text-decoration: line-through;
+}
+</style>
+
+</head>
+<body>
+    <div class="todo-app">
+        <h1>To-Do List App</h1>
+        <input type="text" id="task-input" placeholder="Enter new task">
+        <button id="add-task-btn" style="background-color: white;color:rgb(2, 2, 2);border-radius: 10px;border-bottom: 10px;border-color: rgb(8, 8, 4);">Add Task</button>
+        <ul id="task-list"></ul>
+    </div>
+<script>
+const taskInput = document.getElementById('task-input');
+const addTaskBtn = document.getElementById('add-task-btn');
+const taskList = document.getElementById('task-list');
+
+// Load tasks from local storage
+const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+// Function to add new task
+function addTask(task) {
+    tasks.push(task);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    renderTaskList();
+}
+
+// Function to delete task
+function deleteTask(index) {
+    tasks.splice(index, 1);
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    renderTaskList();
+}
+
+// Function to mark task as completed
+function markTaskAsCompleted(index) {
+    tasks[index].completed = true;
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+    renderTaskList();
+}
+
+// Function to render task list
+function renderTaskList() {
+    const taskListHtml = tasks.map((task, index) => {
+        return `
+            <li>
+                <span ${task.completed ? 'class="completed"' : ''}>${task.name}</span>
+                <button onclick="deleteTask(${index})">Delete</button>
+                <button onclick="markTaskAsCompleted(${index})">Mark as Completed</button>
+            </li>
+        `;
+    }).join('');
+    taskList.innerHTML = taskListHtml;
+}
+
+// Add event listener to add task button
+addTaskBtn.addEventListener('click', () => {
+    const taskName = taskInput.value.trim();
+    if (taskName) {
+        addTask({ name: taskName, completed: false });
+        taskInput.value = '';
+    }
+});
+
+// Render task list on page load
+renderTaskList();
+
+</script>
+</body>
+</html>
+
